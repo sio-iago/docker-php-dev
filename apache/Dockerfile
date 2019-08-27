@@ -11,4 +11,5 @@ WORKDIR ${APACHE_DOCUMENT_ROOT}
 
 COPY apache.conf /usr/local/apache2/conf/apache.conf
 RUN echo "Include /usr/local/apache2/conf/apache.conf" \
-    >> /usr/local/apache2/conf/httpd.conf
+    >> /usr/local/apache2/conf/httpd.conf && \
+    a2enmod rewrite
