@@ -7,6 +7,8 @@ services:
         - 8000:80 
       volumes:
         - ./php/:/var/www/
+      environment: 
+        APACHE_RUN_USER: "#1000"
       links:
         - 'mariadb'
       depends_on: 
