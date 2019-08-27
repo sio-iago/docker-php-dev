@@ -1,0 +1,9 @@
+# IDE Ignores
+.vscode/**
+.idea/**
+
+# Repo Ignores
+mysql-data/
+
+php/**/*
+!php/.gitkeep
