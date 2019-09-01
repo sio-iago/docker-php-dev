@@ -7,3 +7,6 @@ mysql-data/
 
 php/**/*
 !php/.gitkeep
+
+# other
+bundle/**
