@@ -19,8 +19,8 @@ rm -rf bundle/php/.git
 
 # Clean Composer related files
 echo "Removing Composer related files"
-rm -rf bundle/php/vendor
-rm -rf bundle/php/public/install/vendor
+# rm -rf bundle/php/vendor
+# rm -rf bundle/php/public/install/vendor
 rm bundle/php/composer.lock
 
 # Clean other unecessary files
@@ -28,6 +28,9 @@ echo "Removing other unecessary files"
 rm bundle/php/Procfile
 rm bundle/php/app.json
 rm bundle/php/apache_app.conf
+
+echo "Setting up Documentation"
+cp -R documentation bundle/documentation
 
 # Generate Documentation File (Needs markdown installed 'npm i -g html-to-markdown')
 echo "Generating Documentation from README.md"
